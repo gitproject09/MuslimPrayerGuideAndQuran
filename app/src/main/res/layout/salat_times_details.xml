@@ -1,0 +1,351 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rlFajr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/bg_parent_rounded_corner"
+        android:padding="5dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:textColor="#ffffff"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:textSize="15dp"
+            android:text="Fajr"
+            />
+
+        <ImageView
+            android:id="@+id/fajrBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="5dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/alarm_on"
+            />
+
+        <TextView
+            android:id="@+id/fajr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:tag="@string/fajr"
+            android:text="0:00"
+            android:textSize="15dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/fajrBtn"
+            android:layout_toStartOf="@+id/fajrBtn" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlZuhr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/bg_parent_rounded_corner"
+        android:padding="5dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:textColor="#ffffff"
+            android:textSize="15dp"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true"
+            android:text="Zuhr"
+            />
+
+        <ImageView
+            android:id="@+id/zuhrBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="5dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/alarm_on"
+            />
+
+        <TextView
+            android:id="@+id/dhuhr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:tag="@string/dhuhr"
+            android:text="0:00"
+            android:textSize="15dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/zuhrBtn"
+            android:layout_toStartOf="@+id/zuhrBtn" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlAsr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/bg_parent_rounded_corner"
+        android:padding="5dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:textColor="#ffffff"
+            android:textSize="15dp"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true"
+            android:text="Asr"
+            />
+
+        <ImageView
+            android:id="@+id/asrBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="5dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/alarm_on"
+            />
+
+        <TextView
+            android:id="@+id/asr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:tag="@string/asr"
+            android:text="0:00"
+            android:textSize="15dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/asrBtn"
+            android:layout_toStartOf="@+id/asrBtn" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlMaghrib"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/bg_parent_rounded_corner"
+        android:padding="5dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:textColor="#ffffff"
+            android:textSize="15dp"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true"
+            android:text="Maghrib"
+            />
+
+        <ImageView
+            android:id="@+id/maghribBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="5dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/alarm_on"
+            />
+
+        <TextView
+            android:id="@+id/maghrib"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:tag="@string/maghrib"
+            android:text="0:00"
+            android:textSize="15dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/maghribBtn"
+            android:layout_toStartOf="@+id/maghribBtn" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlIsha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/bg_parent_rounded_corner"
+        android:padding="5dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:textColor="#ffffff"
+            android:textSize="15dp"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true"
+            android:text="Isha"
+            />
+
+        <ImageView
+            android:id="@+id/ishaBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="5dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/alarm_on"
+            />
+
+        <TextView
+            android:id="@+id/isha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:tag="@string/isha"
+            android:text="0:00"
+            android:textSize="15dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/ishaBtn"
+            android:layout_toStartOf="@+id/ishaBtn" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlSehri"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/bg_parent_rounded_corner"
+        android:padding="5dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:textColor="#ffffff"
+            android:textSize="15dp"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true"
+            android:text="Sehri Last Time"
+            />
+
+        <ImageView
+            android:id="@+id/sehriBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="5dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/alarm_on"
+            />
+
+        <TextView
+            android:id="@+id/sehri"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:tag="@string/sehri"
+            android:text="0:00"
+            android:textSize="15dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/sehriBtn"
+            android:layout_toStartOf="@+id/sehriBtn" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlIftar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/bg_parent_rounded_corner"
+        android:padding="5dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:textColor="#ffffff"
+            android:textSize="15dp"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true"
+            android:text="Iftar"
+            />
+
+        <ImageView
+            android:id="@+id/iftarBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="5dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/alarm_on"
+            />
+
+        <TextView
+            android:id="@+id/iftar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:tag="@string/iftar"
+            android:text="0:00"
+            android:textSize="15dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/iftarBtn"
+            android:layout_toStartOf="@+id/iftarBtn" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/alarm"
+        style="@style/Widget.Button.NextPrev"
+        android:layout_width="wrap_content"
+        android:layout_gravity="right"
+        android:text="@string/button_alarm_on"/>
+
+</LinearLayout>
+
+    </ScrollView>

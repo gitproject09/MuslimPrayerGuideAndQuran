@@ -1,0 +1,33 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_semi"
+    tools:context="com.ticonsys.prayerguide.RingAlarmActivity">
+
+    <TextView
+        android:id="@+id/prayer_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:textColor="@color/teal_primary_text"
+        android:textSize="24sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_above="@+id/alarm_off"
+        android:background="@color/green_primary"/>
+
+    <Button
+        android:id="@+id/alarm_off"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_alignParentBottom="true"
+        android:text="@string/turn_off_alarm"
+        android:background="@color/teal_primary_dark"
+        android:textSize="20sp"/>
+
+</RelativeLayout>

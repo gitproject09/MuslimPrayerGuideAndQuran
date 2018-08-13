@@ -1,0 +1,89 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".fragments.OnboardingCalculationMethodFragment">
+
+    <include layout="@layout/view_card_title"/>
+
+    <TextView
+        style="@style/Widget.Explain.Separator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/calc_method_explain"/>
+
+    <TextView
+        android:id="@+id/karachi"
+        style="@style/Widget.TimeRow.Separator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:tag="1"
+        android:text="@string/calc_method_karachi"/>
+
+    <TextView
+        android:id="@+id/isna"
+        style="@style/Widget.TimeRow.Separator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:tag="2"
+        android:text="@string/calc_method_isna"/>
+
+    <TextView
+        android:id="@+id/mwl"
+        style="@style/Widget.TimeRow.Separator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:tag="3"
+        android:text="@string/calc_method_mwl"/>
+
+    <TextView
+        android:id="@+id/makkah"
+        style="@style/Widget.TimeRow.Separator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:tag="4"
+        android:text="@string/calc_method_makkah"/>
+
+    <TextView
+        android:id="@+id/egypt"
+        style="@style/Widget.TimeRow.Separator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:tag="5"
+        android:text="@string/calc_method_egypt"/>
+
+    <TextView
+        android:id="@+id/tehran"
+        style="@style/Widget.TimeRow.Separator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:tag="6"
+        android:text="@string/calc_method_tehran"/>
+
+    <TextView
+        android:id="@+id/jafri"
+        style="@style/Widget.TimeRow.Separator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:tag="0"
+        android:text="@string/calc_method_jafari"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="bottom">
+
+        <include layout="@layout/view_prev_next"/>
+    </LinearLayout>
+
+</LinearLayout>

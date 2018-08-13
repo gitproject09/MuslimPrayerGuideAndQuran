@@ -1,0 +1,283 @@
+<resources>
+    <string name="app_name">Prayer Guide</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="compass_dial">Compass Dial</string>
+    <string name="compass_hands">Compass Hands</string>
+
+    <!-- Prayer time names -->
+    <string name="fajr">Fajr</string>
+    <string name="dhuhr">Dhuhr</string>
+    <string name="asr">Asr</string>
+    <string name="maghrib">Maghrib</string>
+    <string name="isha">Isha</string>
+    <string name="sunrise">Sunrise</string>
+    <string name="sunset">Sunset</string>
+
+    <string name="sehri">Sehri</string>
+    <string name="iftar">Eftar</string>
+
+    <string name="button_prev">\u2190 Previous</string>
+    <string name="button_next">Next \u2192</string>
+    <string name="button_done">Done</string>
+
+    <string name="button_alarm_on">Turn on alarm \u2192</string>
+    <string name="button_alarm_off">Turn off alarm \u2192</string>
+    <plurals name="button_alarm">
+        <item quantity="one">@string/button_alarm_on</item>
+        <item quantity="other">@string/button_alarm_off</item>
+    </plurals>
+
+    <!-- Configure app screen -->
+    <string name="config_title">Please take a moment to configure the Salaat times to your requirements.</string>
+    <string name="explain_default_config">
+        By default Salaat times are configured using Muslim World League calculation
+        method, Shafii Juristic for Asr time calculations and makes no adjustment
+        for people living in higher latitudes.\n\n
+        Other calculation methods include: Karachi, ISNA, Makkah, Egypt, Tehran, Jafri\n\n
+        You can choose to use the default settings (don\'t worry you can change them later), or
+        configure the Salaat times to your requirements below.
+    </string>
+
+    <!-- Onboarding Calc method -->
+    <string name="calc_method">Calculation Method</string>
+    <string name="calc_method_explain">
+        Please select the calculation method for Salaat in your area.
+        Muslim World League should work for most people.
+    </string>
+    <string name="asr_method">Asr Juristic</string>
+    <string name="asr_method_explain">
+        Shafii is the standard most often used. Please select the method that best suits you.
+        If you are not sure, leave Shafii selected, you can always change it later.
+    </string>
+
+    <string name="title_onboarding_calc_method">Configure Prayer Times</string>
+    <string name="button_configure_now">Configure settings now \u2192</string>
+    <string name="button_use_default">Use default settings \u2192</string>
+
+    <string name="calc_method_karachi">KARACHI - University of Islamic Sciences</string>
+    <string name="calc_method_isna">ISNA - Islamic Society of North America</string>
+    <string name="calc_method_mwl">MWL - Muslim World League</string>
+    <string name="calc_method_makkah">MAKKAH - Umm al-Qura</string>
+    <string name="calc_method_egypt">EGYPT - Egyptian General Authority of Survey</string>
+    <string name="calc_method_tehran">TEHRAN - Institute of Geophysics, University of Tehran</string>
+    <string name="calc_method_jafari">JAFARI - Ithna Ashari</string>
+
+    <string name="asr_method_shafii">Shafii (Standard)</string>
+    <string name="asr_method_hanfi">Hanfi</string>
+
+    <string name="time_title">Time format</string>
+    <string name="time_12">12 hours (Example: 01:00 pm)</string>
+    <string name="time_24">24 hours (Example: 13:00)</string>
+
+    <string name="high_latitude">High latitude adjustment</string>
+    <string name="high_latitude_explain">
+        For people living in higher latitudes, the prayer times can be incorrect.
+        If the prayer times seem incorrect, try changing this value.\n\n
+        During the summer months One-Seventh method produces a later Fajr time than
+        Angle based method. If you perfer Angle based method, please change below.
+    </string>
+    <string name="high_lat_none">None</string>
+    <string name="high_lat_midnight">Midnight</string>
+    <string name="high_lat_one_seventh">One-seventh of night</string>
+    <string name="high_lat_angle_based">Angle based</string>
+
+    <!-- Map -->
+    <string name="label_compass_orientation">This feature uses the compass in your phone to point you in the correct direction. The compass can be unreliable indoors so if the results look incorrect, we recommend orienting your phones compass by performing the following steps.</string>
+    <string name="label_dont_show_again">Don\'t show again</string>
+    <string name="title_compass_orientation">Compass orientation</string>
+
+    <!-- SNACK BAR -->
+    <string name="button_okay">Okay</string>
+    <string name="button_retry">Retry</string>
+
+    <!-- ERRORS -->
+    <string name="error_permission_location">
+        Your location is used to calculate Salaat times.\n
+        Click \'Okay\' to grant permission to access your location.
+    </string>
+
+    <string name="error_setting_location">
+        Your location in GPS coordinates is used to calculate Salaat times.\n
+        Without this, Salaat times will not be visible.
+    </string>
+
+    <string name="salaat_times">Salaat Times</string>
+    <string name="kaaba_position">Kaaba position</string>
+    <string name="qibla_direction">Qibla</string>
+    <string name="quran_offline">Quran Sharif</string>
+    <string name="current_location">Current location</string>
+    <string name="kaaba">Kaaba</string>
+
+    <string name="permission_write_external_required">
+        Kaaba locator requires Google Maps which requires permission to write to external storage.\n\n
+        If you click \'continue\', you will be prompted to grant permissions to write to external storage.
+    </string>
+    <string name="button_continue">Continue \u2192</string>
+    <string name="turn_off_alarm">Turn off alarm</string>
+    <string name="turn_on_alarm">Turn on alarm</string>
+    <string name="set_alarm">Set alarm</string>
+    <string name="prayer_name_time">%s time.</string>
+    <string name="notification_body">It is time for %s prayers.</string>
+    <string name="alarm_timed_out">%s Alarm timed out after 5 minutes.</string>
+    <string name="alarm_timed_out_only">Alarm timed out after 5 minutes.</string>
+    <string name="alarm_interrupted">Alarm interrupted</string>
+    <string name="alarm_interrupted_body">alarm interrupted by an other app or phone call.</string>
+    <string name="suhoor_is_close">Suhoor is close.</string>
+    <string name="iftar_is_close">Iftar is close.</string>
+    <string name="set_alarm_ascending_explain">Volume starts off low and increases every 10 seconds to gently wake you up.</string>
+    <string name="set_alarm_ascending">Ascending volume alarm/Adhan</string>
+    <string name="set_alarm_ringtone_options">Ringtone options</string>
+    <string name="set_alarm_notify_before_iftar">Notify me before Iftar</string>
+    <string name="set_alarm_notify_before_suhoor">Notify me before Suhoor</string>
+    <string name="set_alarm_ramadan_explain">Be notified before Suhoor or Iftar and display prayers in the alarm screen.\nThis option is only available if alarm is turned on.</string>
+    <string name="set_alarm_ramadan">Turn on Ramadan options</string>
+    <string name="set_alarm_select_ringtone">Select a ringtone (Current: %s)</string>
+    <string name="set_alarm_random_ringtone">Random alarm ringtone</string>
+    <string name="set_alarm_use_adhan">Play Adhan instead of alarm ringtone</string>
+
+    <string-array name="alarm_before">
+        <item>Off</item>
+        <item>15 mins</item>
+        <item>30 mins</item>
+        <item>45 mins</item>
+        <item>1 hour</item>
+    </string-array>
+
+    <!-- Prayers -->
+    <string name="suhoor_dua">Suhoor dua</string>
+    <string name="prayer_sehri">وَبِصَوْمِ غَدٍ نَّوَيْتَ مِنْ شَهْرِ رَمَضَانَ</string>
+    <string name="prayer_sehri_en">Wa bi-sawmi ghadin nawaytu min shahri ramadan</string>
+    <string name="prayer_sehri_translation">I intend to keep the fast for tomorrow in the month of Ramadan.</string>
+
+    <string name="iftar_dua">Iftar dua</string>
+    <string name="prayer_iftar">\u200F اِنِّى لَكَ صُمْتُ وَبِكَ امنْتُ وَ عَلى رِزْقِكَ اَفْطَرْتُ</string>
+    <string name="prayer_iftar_en">Allahumma Inni laka sumtu wa bika amantu [wa alayka tawakkalto] wa ‘ala rizqika aftartu</string>
+    <string name="prayer_iftar_translation">O Allah! I fasted for You and I believe in You and I break my fast with Your sustenance</string>
+
+    <string name="title_terms_and_conditions">Settings 2</string>
+    <string name="action_accept">Accept</string>
+
+    <string name="secret_google_maps_api_key">AIzaSyB0ecVDBWQ0HnA-LhBfJaxN_n5h0O1Z1dQ</string>
+
+    <string-array name="all_surah_list">
+        <item>1. Al-Fatihah (আল-ফাতিহা)</item>
+        <item>2. Al-Baqarah (আল বাকারাহ)</item>
+        <item>3. Aali Imran (আলে ইমরান)</item>
+        <item>4. An-Nisa’ (আন্ নিসা)</item>
+        <item>5. Al-Ma’idah (আল মায়েদাহ)</item>
+        <item>6. Al-An’am (আল আন’আম)</item>
+        <item>7. Al-A’raf (আল আরাফ)</item>
+        <item>8. Al-Anfal (আল আনফাল)</item>
+        <item>9. At-Taubah (আত তাওবা)</item>
+        <item>10. Yunus (ইউনুস)</item>
+        <item>11. Hud (হুদ)</item>
+        <item>12. Yusuf (ইউসুফ)</item>
+        <item>13. Ar-Ra’d (আর্ রাদ)</item>
+        <item>14. Ibrahim (ইব্রাহীম)</item>
+        <item>15. Al-Hijr (আল হিজর)</item>
+        <item>16. An-Nahl (আন নাহল)</item>
+        <item>17. Al-Isra’ (বনী ইস্রাঈল)</item>
+        <item>18. Al-Kahf (আল কাহফ)</item>
+        <item>19. Maryam (মারয়াম)</item>
+        <item>20. Ta-Ha (ত্বাহা)</item>
+        <item>21. Al-Anbiya’ (আল আম্বিয়া)</item>
+        <item>22. Al-Haj (আল হাজ্জ)</item>
+        <item>23. Al-Mu’minun (আল মুমিনূন)</item>
+        <item>24. An-Nur (আন্ নূর)</item>
+        <item>25. Al-Furqan (আল-ফুরকান)</item>
+        <item>26. Ash-Shu’ara’ (আশ্-শু’আরা)</item>
+        <item>27. An-Naml (আন নামল)</item>
+        <item>28. Al-Qasas (আল কাসাস)</item>
+        <item>29. Al-Ankabut (আল আনকা্বূত)</item>
+        <item>30. Ar-Rum (আর রুম)</item>
+        <item>31. Luqman (লুক্মান)</item>
+        <item>32. As-Sajdah (আস সাজাদাহ)</item>
+        <item>33. Al-Ahzab (আল আহযাব)</item>
+        <item>34. Saba’ (আস সাবা)</item>
+        <item>35. Al-Fatir (ফাতের)</item>
+        <item>36. Ya-Sin (ইয়া-সীন)</item>
+        <item>37. As-Saffah (আস্ স-ফফা-ত)</item>
+        <item>38. Sad (সা-দ)</item>
+        <item>39. Az-Zumar (আয যুমার)</item>
+        <item>40. Ghafar (আল মুমিন)</item>
+        <item>41. Fusilat (হা-মীম আস সাজাদাহ)</item>
+        <item>42. Ash-Shura (আশ শূরা)</item>
+        <item>43. Az-Zukhruf (আয্ যুখ্রুফ)</item>
+        <item>44. Ad-Dukhan (আদ দুখান)</item>
+        <item>45. Al-Jathiyah (আল জাসিয়াহ)</item>
+        <item>46. Al-Ahqaf (আল আহক্কাফ)</item>
+        <item>47. Muhammad (মুহাম্মদ)</item>
+        <item>48. Al-Fat’h  (আল ফাতহ)</item>
+        <item>49. Al-Hujurat (আল হুজুরাত)</item>
+        <item>50. Qaf (ক্কাফ)</item>
+        <item>51. Adz-Dzariyah (আয যারিয়াত)</item>
+        <item>52. At-Tur (আত তূর)</item>
+        <item>53. An-Najm (আন নাজম)</item>
+        <item>54. Al-Qamar (আল ক্কামার)</item>
+        <item>55. Ar-Rahman (আর রহমান)</item>
+        <item>56. Al-Waqi’ah (আল ওয়াকি’আ)</item>
+        <item>57. Al-Hadid (আল হাদীদ)</item>
+        <item>58. Al-Mujadilah (আল মুজাদালাহ)</item>
+        <item>59. Al-Hashr (আল হাশর)</item>
+        <item>60. Al-Mumtahanah (আল মুমতাহিনা)</item>
+        <item>61. As-Saf (আস সফ)</item>
+        <item>62. Al-Jum’ah (আল জুমআ)</item>
+        <item>63. Al-Munafiqun (আল মুনাফিকুন)</item>
+        <item>64. At-Taghabun (আত তাগাবুন)</item>
+        <item>65. At-Talaq (আত তালাক)</item>
+        <item>66. At-Tahrim (আত তাহ্রীম)</item>
+        <item>67. Al-Mulk – (আল মুলক)</item>
+        <item>68. Al-Qalam (আল কলম)</item>
+        <item>69. Al-Haqqah (আল হাককাহ)</item>
+        <item>70. Al-Ma’arij (আল মাআরিজ)</item>
+        <item>71. Nuh (নূহ)</item>
+        <item>72. Al-Jinn (আল জিন)</item>
+        <item>73. Al-Muzammil (আল মুযযাম্মিল)</item>
+        <item>74. Al-Mudaththir (আল মুদ্দাস্সির)</item>
+        <item>75. Al-Qiyamah (আল কিয়ামাহ)</item>
+        <item>76. Al-Insan (আদ দাহর)</item>
+        <item>77. Al-Mursalat (আল মুরসালাত)</item>
+        <item>78. An-Naba’ (আন নাবা)</item>
+        <item>79. An-Nazi’at (আন নাযি’আত)</item>
+        <item>80. ‘Abasa (আবাসা)</item>
+        <item>81. At-Takwir (আত তাকবীর)</item>
+        <item>82. Al-Infitar (আল ইনফিতার)</item>
+        <item>83. Al-Mutaffifin (আল মুতাফফিফীন)</item>
+        <item>84. Al-Inshiqaq (আল ইনশিকাক)</item>
+        <item>85. Al-Buruj (আল বুরুজ)</item>
+        <item>86. At-Tariq (আত তারিক)</item>
+        <item>87. Al-A’la (আল আ’লা)</item>
+        <item>88. Al-Ghashiyah (আল গাশিয়াহ)</item>
+        <item>89. Al-Fajr (আল ফজর)</item>
+        <item>90. Al-Balad (আল বালাদ)</item>
+        <item>91. Ash-Shams (আশ শামস)</item>
+        <item>92. Al-Layl (আল লাইল)</item>
+        <item>93. Adh-Dhuha (আদ দুহা)</item>
+        <item>94. Al-Inshirah (আলাম নাশ্রাহ)</item>
+        <item>95. At-Tin (আত তীন)</item>
+        <item>96. Al-‘Alaq (আলাক)</item>
+        <item>97. Al-Qadar (আল কাদ্র)</item>
+        <item>98. Al-Bayinah (আল বাইয়েনাহ)</item>
+        <item>99. Az-Zalzalah (আল যিলযাল)</item>
+        <item>100. Al-‘Adiyah (আল আদিয়াহ)</item>
+        <item>101. Al-Qari’ah (আল কারি’আহ)</item>
+        <item>102. At-Takathur (আত তাকাসুর)</item>
+        <item>103. Al-‘Asr (আল আসর)</item>
+        <item>104. Al-Humazah (আল হুমাযা)</item>
+        <item>105. Al-Fil (আল ফীল)</item>
+        <item>106. Quraish (কুরাইশ)</item>
+        <item>107. Al-Ma’un (আল মাউন)</item>
+        <item>108. Al-Kauthar (আল কাউসার)</item>
+        <item>109. Al-Kafirun (আল কাফিরুন)</item>
+        <item>110. An-Nasr (আন নসর)</item>
+        <item>111. Al-Masad (আল লাহাব)</item>
+        <item>112. Al-Ikhlas (আল ইখ্লাস)</item>
+        <item>113. Al-Falaq (আল ফালাক)</item>
+        <item>114. An-Nas (আন নাস)</item>
+    </string-array>
+
+
+</resources>

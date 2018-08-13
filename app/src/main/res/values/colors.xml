@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- THEME DEFAULT -->
+    <color name="green_primary">#4CAF50</color>
+    <color name="green_primary_dark">#1B5E20</color>
+    <color name="green_accent">#B9F6CA</color>
+    <color name="separator">#EFEFEF</color>
+
+    <!-- THEME TEAL -->
+   <!-- <color name="teal_primary">#009688</color>
+    <color name="teal_primary_dark">#00796B</color>-->
+
+    <color name="teal_primary">#052131</color>
+    <color name="teal_primary_dark">#1d3745</color>
+
+    <color name="text_yellow">#FFFF4C</color>
+
+
+
+    <color name="teal_primary_light">#B2DFDB</color>
+    <color name="teal_accent">#4CAF50</color>
+    <color name="teal_primary_text">#212121</color>
+    <color name="teal_secondary_text">#727272</color>
+    <color name="teal_icons">#FFFFFF</color>
+    <color name="teal_separator">#4DB6B6B6</color>
+
+    <color name="white">#ffffff</color>
+    <color name="feed_bg">#d3d6db</color>
+    <color name="feed_item_bg">#66000000</color>
+    <color name="feed_item_border">#66000000</color>
+
+    <color name="quran_bg">#80000000</color>
+
+    <color name="link">#0a80d1</color>
+    <color name="timestamp">#a0a3a7</color>
+
+</resources>
