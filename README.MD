@@ -8,5 +8,5 @@ Muslim Prayer Guide is available on Google Play Store as [Muslim Prayer Guide](h
 Requrements :
 ------------
 
- - Android API level 16 or greater
+ - Android API level 14 or greater
  - You should be able to setup the project in Android Studio 3.0.0+.
