@@ -2,9 +2,6 @@ package com.ticonsys.prayerguide.widget;
 
 import android.content.Context;
 import android.graphics.Typeface;
-import android.os.Build;
-import android.support.v4.view.PagerAdapter;
-import android.support.v4.view.ViewPager;
 import android.util.AttributeSet;
 import android.util.SparseArray;
 import android.util.TypedValue;
@@ -17,6 +14,9 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.ticonsys.prayerguide.R;
+
+import androidx.viewpager.widget.PagerAdapter;
+import androidx.viewpager.widget.ViewPager;
 
 public class SlidingTabLayout extends HorizontalScrollView {
   /**

@@ -2,7 +2,6 @@ package com.ticonsys.prayerguide.fragments;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,14 +10,8 @@ import android.widget.TextView;
 import com.ticonsys.prayerguide.util.AppSettings;
 import com.ticonsys.prayerguide.R;
 
-/**
- * A simple {@link Fragment} subclass.
- * Activities that contain this fragment must implement the
- * {@link OnOnboardingOptionSelectedListener} interface
- * to handle interaction events.
- * Use the {@link OnboardingAdjustmentHighLatitudesFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
+import androidx.fragment.app.Fragment;
+
 public class OnboardingAdjustmentHighLatitudesFragment extends OnboardingBaseFragment {
   // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
   private static final String ARG_PARAM1 = "index_of_card";

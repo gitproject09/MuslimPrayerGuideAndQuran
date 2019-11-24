@@ -5,7 +5,6 @@ import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
-import android.support.v4.app.NotificationCompat;
 
 import com.ticonsys.prayerguide.Constants;
 import com.ticonsys.prayerguide.R;
@@ -16,14 +15,10 @@ import com.ticonsys.prayerguide.util.PrayTime;
 import java.util.Calendar;
 import java.util.TimeZone;
 
-/**
- * This {@code IntentService} does the app's actual work.
- * {@code SampleAlarmReceiver} (a {@code WakefulBroadcastReceiver}) holds a
- * partial wake lock for this service while the service does its work. When the
- * service is finished, it calls {@code completeWakefulIntent()} to release the
- * wake lock.
- */
+import androidx.core.app.NotificationCompat;
+
 public class SalaatSchedulingService extends IntentService implements Constants {
+
   public SalaatSchedulingService() {
     super("SchedulingService");
   }

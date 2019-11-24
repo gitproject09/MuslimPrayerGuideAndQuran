@@ -1,7 +1,6 @@
 package com.ticonsys.prayerguide.fragments;
 
-
-import android.app.Fragment;
+import androidx.fragment.app.Fragment;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;

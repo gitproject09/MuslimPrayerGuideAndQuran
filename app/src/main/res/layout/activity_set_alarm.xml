@@ -250,5 +250,7 @@
                 android:textColor="?android:attr/textColorPrimary"/>
 
         </LinearLayout>
+
     </ScrollView>
+
 </LinearLayout>

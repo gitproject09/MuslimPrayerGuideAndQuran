@@ -2,8 +2,8 @@ package com.ticonsys.prayerguide;
 
 import android.app.Activity;
 
-import android.app.FragmentManager;
-import android.app.Fragment;
+import androidx.appcompat.app.AlertDialog;
+import androidx.fragment.app.Fragment;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageInfo;
@@ -13,10 +13,10 @@ import android.net.ConnectivityManager;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.support.v4.view.ViewPager;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.fragment.app.FragmentManager;
+import androidx.viewpager.widget.ViewPager;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -81,12 +81,12 @@ public class SalaatTimesActivity extends AppCompatActivity implements Constants,
     setSupportActionBar(toolbar);
    // toolbar.setVisibility(View.GONE);
 
-    mLocationHelper = (LocationHelper) getFragmentManager().findFragmentByTag(LOCATION_FRAGMENT);
+    mLocationHelper = (LocationHelper) getSupportFragmentManager().findFragmentByTag(LOCATION_FRAGMENT);
 
 
 
     // Creating The ViewPagerAdapter and Passing Fragment Manager, Titles fot the Tabs and Number Of Tabs.
-    mAdapter = new ScreenSlidePagerAdapter(getFragmentManager(),0);
+    mAdapter = new ScreenSlidePagerAdapter(getSupportFragmentManager(),0);
 
     mPager = (ViewPager) findViewById(R.id.pager);
     mPager.setAdapter(mAdapter);
@@ -103,7 +103,7 @@ public class SalaatTimesActivity extends AppCompatActivity implements Constants,
 
     if(mLocationHelper == null) {
       mLocationHelper = LocationHelper.newInstance();
-      getFragmentManager().beginTransaction().add(mLocationHelper, LOCATION_FRAGMENT).commit();
+      getSupportFragmentManager().beginTransaction().add(mLocationHelper, LOCATION_FRAGMENT).commit();
     }
 
     /*if (!settings.getBoolean(AppSettings.Key.IS_TNC_ACCEPTED, false)) {
@@ -223,7 +223,7 @@ public class SalaatTimesActivity extends AppCompatActivity implements Constants,
   public void onLocationChanged(Location location) {
     mLastLocation = location;
     // NOT THE BEST SOLUTION, THINK OF SOMETHING ELSE
-    mAdapter = new ScreenSlidePagerAdapter(getFragmentManager(), 0);
+    mAdapter = new ScreenSlidePagerAdapter(getSupportFragmentManager(), 0);
     mPager.setAdapter(mAdapter);
   }
 
@@ -236,7 +236,7 @@ public class SalaatTimesActivity extends AppCompatActivity implements Constants,
   public void onUseDefaultSelected() {
     if (mLastLocation != null) {
       // NOT THE BEST SOLUTION, THINK OF SOMETHING ELSE
-      mAdapter = new ScreenSlidePagerAdapter(getFragmentManager(),0);
+      mAdapter = new ScreenSlidePagerAdapter(getSupportFragmentManager(),0);
       mPager.setAdapter(mAdapter);
     }
   }

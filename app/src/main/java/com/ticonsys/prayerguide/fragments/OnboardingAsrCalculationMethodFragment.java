@@ -2,7 +2,7 @@ package com.ticonsys.prayerguide.fragments;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
+import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,15 +12,6 @@ import com.ticonsys.prayerguide.util.AppSettings;
 import com.ticonsys.prayerguide.util.PrayTime;
 import com.ticonsys.prayerguide.R;
 
-
-/**
- * A simple {@link Fragment} subclass.
- * Activities that contain this fragment must implement the
- * {@link OnOnboardingOptionSelectedListener} interface
- * to handle interaction events.
- * Use the {@link OnboardingAsrCalculationMethodFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class OnboardingAsrCalculationMethodFragment extends OnboardingBaseFragment implements View.OnClickListener {
   // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
   private static final String ARG_PARAM1 = "param1";

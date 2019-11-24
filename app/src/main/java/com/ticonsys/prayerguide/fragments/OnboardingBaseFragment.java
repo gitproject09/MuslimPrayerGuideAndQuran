@@ -1,8 +1,10 @@
 package com.ticonsys.prayerguide.fragments;
 
 
-import android.app.Fragment;
+
 import android.view.View;
+
+import androidx.fragment.app.Fragment;
 
 /**
  * A simple {@link Fragment} subclass.

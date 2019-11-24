@@ -84,6 +84,7 @@
         android:gravity="bottom">
 
         <include layout="@layout/view_prev_next"/>
+
     </LinearLayout>
 
 </LinearLayout>

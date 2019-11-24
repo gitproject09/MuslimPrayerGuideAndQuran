@@ -2,7 +2,7 @@ package com.ticonsys.prayerguide.fragments;
 
 import android.Manifest;
 import android.app.Activity;
-import android.app.Fragment;
+import androidx.fragment.app.Fragment;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;

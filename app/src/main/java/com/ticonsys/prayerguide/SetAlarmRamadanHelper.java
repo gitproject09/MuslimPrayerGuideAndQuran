@@ -13,6 +13,7 @@ import com.ticonsys.prayerguide.util.AppSettings;
  * Created by Sopan on 12/07/2015.
  */
 public class SetAlarmRamadanHelper implements CompoundButton.OnCheckedChangeListener {
+
   AppSettings mSettings;
 
   SetAlarmActivity mActivity;

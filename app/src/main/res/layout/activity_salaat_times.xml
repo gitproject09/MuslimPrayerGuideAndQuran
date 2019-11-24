@@ -20,7 +20,7 @@
         app:tabGravity="fill"
         android:background="@drawable/bg_tab_colors"/>
 
-    <android.support.v4.view.ViewPager
+    <androidx.viewpager.widget.ViewPager
         android:id="@+id/pager"
         android:layout_height="0dp"
         android:layout_width="match_parent"

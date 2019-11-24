@@ -8,7 +8,6 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.LocationManager;
 import android.os.Build;
-import android.support.v4.content.WakefulBroadcastReceiver;
 import android.util.Log;
 
 import com.ticonsys.prayerguide.Constants;
@@ -22,6 +21,8 @@ import java.util.Calendar;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.TimeZone;
+
+import androidx.legacy.content.WakefulBroadcastReceiver;
 
 /**
  * When the alarm fires, this WakefulBroadcastReceiver receives the broadcast Intent

@@ -39,6 +39,7 @@
                 android:textSize="14dp"
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true" />
+
         </RelativeLayout>
 
 
@@ -185,5 +186,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
                 android:text="@string/prayer_iftar_translation"/>
+
         </LinearLayout>
+
     </LinearLayout>

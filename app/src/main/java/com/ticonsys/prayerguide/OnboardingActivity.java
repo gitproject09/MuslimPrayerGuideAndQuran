@@ -1,17 +1,16 @@
 package com.ticonsys.prayerguide;
 
-import android.app.Fragment;
-import android.app.FragmentManager;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.viewpager.widget.PagerAdapter;
+import androidx.viewpager.widget.ViewPager;
+
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.view.PagerAdapter;
-import android.support.v4.view.ViewPager;
-import android.support.v7.app.ActionBar;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.WindowManager;
-import android.widget.TextView;
 
 import com.ticonsys.prayerguide.fragments.OnOnboardingOptionSelectedListener;
 import com.ticonsys.prayerguide.fragments.OnboardingAdjustmentHighLatitudesFragment;
@@ -52,7 +51,7 @@ public class OnboardingActivity extends AppCompatActivity implements OnOnboardin
     Intent intent = getIntent();
     mCardIndex = intent.getIntExtra(EXTRA_CARD_INDEX, 0);
     mPager = (ViewPager) findViewById(R.id.pager);
-    mPagerAdapter = new ScreenSlidePagerAdapter(getFragmentManager(), mCardIndex);
+    mPagerAdapter = new ScreenSlidePagerAdapter(getSupportFragmentManager(), mCardIndex);
     mPager.setAdapter(mPagerAdapter);
   }
 
